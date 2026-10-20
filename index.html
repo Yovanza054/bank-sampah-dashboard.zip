@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dasbor Bank Sampah RW</title>
+  <meta name="description" content="Dasbor interaktif untuk memantau setoran sampah warga per RW.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#utama">Lewati ke konten utama</a>
+
+  <header class="header">
+    <div class="wrap">
+      <h1>Dasbor Bank Sampah RW</h1>
+      <p>Pantau setoran sampah warga, Mei–Oktober 2026</p>
+    </div>
+  </header>
+
+  <main id="utama" class="wrap">
+    <section class="persona" aria-labelledby="judul-persona">
+      <h2 id="judul-persona">Pengguna Utama</h2>
+      <p><strong>Bu Ratna (48 tahun)</strong>, pengurus bank sampah. Ia ingin tahu cepat apakah setoran warga naik atau turun, jenis sampah apa yang paling banyak, dan RW mana yang perlu diajak lebih aktif. Ia memakai ponsel dengan sinyal yang tidak selalu stabil.</p>
+    </section>
+
+    <section class="filter" aria-labelledby="judul-filter">
+      <h2 id="judul-filter">Saring Data</h2>
+      <div class="filter-grid">
+        <div class="field">
+          <label for="f-rw">Wilayah</label>
+          <select id="f-rw"></select>
+        </div>
+        <div class="field">
+          <label for="f-jenis">Jenis sampah</label>
+          <select id="f-jenis"></select>
+        </div>
+        <button type="button" id="reset" class="btn">Atur ulang</button>
+      </div>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="judul-ringkasan">
+      <h2 id="judul-ringkasan">Ringkasan</h2>
+      <div class="kpi-grid" id="kpi"></div>
+    </section>
+
+    <section class="charts" aria-labelledby="judul-grafik">
+      <h2 id="judul-grafik">Grafik</h2>
+      <div class="chart-grid">
+        <figure class="card">
+          <figcaption>Tren setoran per bulan (kg)</figcaption>
+          <div id="chart-line"></div>
+        </figure>
+        <figure class="card">
+          <figcaption>Perbandingan jenis sampah (kg)</figcaption>
+          <div id="chart-bar"></div>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="judul-detail">
+      <h2 id="judul-detail">Detail</h2>
+      <details class="card">
+        <summary>Tampilkan tabel rincian per bulan</summary>
+        <div class="table-wrap">
+          <table id="tabel"></table>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">Studi kasus mata kuliah Interaksi Manusia dan Komputer. Data bersifat contoh.</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
