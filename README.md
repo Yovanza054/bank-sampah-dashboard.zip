@@ -161,6 +161,6 @@ Ajak 3–5 calon pengguna, lalu minta mereka menyelesaikan tugas berikut tanpa d
 
 <div align="center">
 
-Dibuat untuk tugas studi kasus Interaksi Manusia dan Komputer. Data bersifat contoh. 🌿
+Yovanza Villareal - G1A023054
 
 </div>
